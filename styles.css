@@ -1,0 +1,221 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonts & Body */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffe600;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content .highlight {
+    color: #ffe600;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ffe600;
+    color: black;
+  }
+  
+  /* Sections */
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+  
+  /* Form */
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  form button {
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+  }
+  #ads {
+    background: #fffdf7;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .ads-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+  }
+  
+  .ad-box {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: #fff;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  .ad-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .ad-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+    
